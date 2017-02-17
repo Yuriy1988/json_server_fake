@@ -699,7 +699,7 @@
     "email": "test@mail.com",
     "firstName": "John",
     "lastName": "Doe",
-    "role": "generic",
+    "role": "admin",
     "status": "verified"
   },
   "loginSucces": {
