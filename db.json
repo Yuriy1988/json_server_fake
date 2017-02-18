@@ -987,6 +987,36 @@
       }
     },
     {
+      "id": 5,
+      "status": "In progress",
+      "lastUpdated": "01/04/2016",
+      "startDate": "01/04/2016",
+      "obligation": "Business Activity Statement",
+      "entity": "Corporate Consolidated GST group",
+      "dueDate": "Fri Feb 20 2017 15:46:42 GMT+0200 (EET)",
+      "name": "Accruals #6253",
+      "project": {
+        "id": 1
+      },
+      "responsible": {
+        "id": 1,
+        "name": "Stan May"
+      },
+      "preparer": {
+        "id": 2,
+        "name": "Name 2 Dou"
+      },
+      "reviewer": {
+        "id": 3,
+        "name": "Name 2 Dou"
+      },
+      "progress": 80,
+      "workstream": {
+        "id": 1,
+        "name": "Fixed Assets"
+      }
+    },
+    {
       "id": 2,
       "status": "Done",
       "lastUpdated": "01/04/2016",
@@ -1074,36 +1104,6 @@
       "workstream": {
         "id": 4,
         "name": "Donations"
-      }
-    },
-    {
-      "id": 5,
-      "status": "In progress",
-      "lastUpdated": "01/04/2016",
-      "startDate": "01/04/2016",
-      "project": {
-        "id": 2
-      },
-      "entity": "Corporate Consolidated GST group",
-      "obligation": "Business Activity Statement",
-      "dueDate": "Fri Feb 20 2017 15:46:42 GMT+0200 (EET)",
-      "name": "Accruals #6253",
-      "responsible": {
-        "id": 1,
-        "name": "Stan May"
-      },
-      "preparer": {
-        "id": 2,
-        "name": "Name 2 Dou"
-      },
-      "reviewer": {
-        "id": 3,
-        "name": "Name 2 Dou"
-      },
-      "progress": 80,
-      "workstream": {
-        "id": 5,
-        "name": "Legal fees"
       }
     },
     {
