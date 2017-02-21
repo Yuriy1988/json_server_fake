@@ -519,7 +519,7 @@
       "type": "start-date"
     }
   ],
-  "lists": [
+  "milestones": [
     {
       "name": "ITR Lodgement",
       "id": "1",
@@ -564,6 +564,44 @@
       "progress": 50,
       "dueDate": "18/02/2017",
       "project": "Retirement Service. | FBT Return Lodgement | 2016"
+    }
+  ],
+  "accountsHardcoded": [
+    {
+      "id":0,
+      "account":"7283",
+      "description":"Cash",
+      "balance":20000
+    },
+    {
+      "id":1,
+      "account":"90273",
+      "description":"Accounts Receivable",
+      "balance":18900
+    },
+    {
+      "id":2,
+      "account":"28932",
+      "description":"Salaries Expense",
+      "balance":-12000
+    },
+    {
+      "id":3,
+      "account":"18372",
+      "description":"Office Equipment",
+      "balance":-1826
+    },
+    {
+      "id":4,
+      "account":"19283",
+      "description":"Supplies Used",
+      "balance":-12300
+    },
+    {
+      "id":5,
+      "account":"24324",
+      "description":"Bank Loan from ANZx",
+      "balance":-55000
     }
   ],
   "upcomingEvents": [
@@ -732,47 +770,21 @@
       ]
     },
     {
-      "name": "NameEnt",
+      "name": "TEST",
       "consolidationGroup": "Corporate Consolidated GST group",
-      "startDate": "Mon Feb 20 2017 21:44:15 GMT+0200 (EET)",
-      "yearEnd": "2017-02-25T21:44:15+02:00",
-      "country": "USA",
-      "obligations": [
-        {
-          "id": 1,
-          "name": "Business Activity Statement",
-          "method": {
-            "id": 2,
-            "name": "Bottom Up Method"
-          }
-        },
-        {
-          "id": 2,
-          "name": "Business Activity Statement"
-        }
-      ],
+      "startDate": "Tue Feb 21 2017 15:06:58 GMT+0200 (EET)",
+      "yearEnd": "Tue Feb 21 2017 15:06:58 GMT+0200 (EET)",
+      "country": 1,
+      "obligations": [],
       "id": 4
     },
     {
-      "name": "USA",
-      "consolidationGroup": "Retirement Service",
-      "startDate": "Mon Feb 20 2017 21:45:10 GMT+0200 (EET)",
-      "yearEnd": "2017-02-16T21:45:10+02:00",
-      "country": "USA",
-      "obligations": [
-        {
-          "id": 1,
-          "name": "Business Activity Statement"
-        },
-        {
-          "id": 2,
-          "name": "Business Activity Statement",
-          "timing": {
-            "id": 2,
-            "name": "Quarterly"
-          }
-        }
-      ],
+      "name": "zzz",
+      "consolidationGroup": "AMP Life",
+      "startDate": "Tue Feb 21 2017 15:07:32 GMT+0200 (EET)",
+      "yearEnd": "Tue Feb 21 2017 15:07:32 GMT+0200 (EET)",
+      "country": "zzz",
+      "obligations": [],
       "id": 5
     }
   ],
@@ -2284,6 +2296,53 @@
       "milestoneId": 2,
       "offset": 2,
       "id": 35
+    },
+    {
+      "status": "In progress",
+      "lastUpdated": "Tue Feb 21 2017 13:34:09 GMT+0200 (EET)",
+      "startDate": "Tue Feb 21 2017 13:34:09 GMT+0200 (EET)",
+      "entity": {
+        "name": "Corporate Consolidated GST group",
+        "id": 1
+      },
+      "obligation": {
+        "name": "Business Activity Statement",
+        "id": 1
+      },
+      "dueDate": "2017-02-21T11:33:57.439Z",
+      "name": "te",
+      "project": {
+        "id": "1"
+      },
+      "responsible": {
+        "id": "1",
+        "name": "Stan May"
+      },
+      "preparer": {
+        "name": "Name 2 Dou",
+        "id": 2,
+        "imageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/borges_marcos/128.jpg",
+        "queriesRaised": 15,
+        "queriesAnswered": 1,
+        "progress": 100
+      },
+      "reviewer": {
+        "name": "Name 3 Dou",
+        "id": 3,
+        "imageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/borges_marcos/128.jpg",
+        "queriesRaised": 15,
+        "queriesAnswered": 1,
+        "progress": 100
+      },
+      "progres": 0,
+      "workstream": {
+        "id": "3",
+        "name": "Professional fees"
+      },
+      "description": "erwer",
+      "milestoneId": 1,
+      "offset": 1,
+      "id": 36
     }
   ],
   "workstreams": [
@@ -2852,7 +2911,7 @@
       }
     }
   ],
-  "milestones": [
+  "milestonesData": [
     {
       "data": {
         "cols": [
@@ -4499,5 +4558,1750 @@
       "name": "Corporate Consolidated GST group",
       "id": 3
     }
-  ]
+  ],
+  "workflowTemplates": [  
+  {
+    "id":1,
+    "name":"Bonus Accrual",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload a breakdown of GL account",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review breakdown",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Confirm income tax treatment to be adopted",
+        "milestoneOffsetWeeks":-2
+      },
+      {
+        "id":4,
+        "name":"Upload additional workpapers to substantiate income tax treatment adopted",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":5,
+        "name":"Determine tax adjustments in the statement of taxable income",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":6,
+        "name":"Document any tax planning opportunities for next year",
+        "milestoneOffsetWeeks":-1
+      }
+    ]
+  },
+  {
+    "id":2,
+    "name":"Superannuation accrual",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload a breakdown of GL account",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review breakdown",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Confirm income tax treatment to be adopted",
+        "milestoneOffsetWeeks":-2
+      },
+      {
+        "id":4,
+        "name":"Upload additional workpapers to substantiate income tax treatment adopted",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":5,
+        "name":"Determine tax adjustments in the statement of taxable income",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":6,
+        "name":"Document any tax planning opportunities for next year",
+        "milestoneOffsetWeeks":-1
+      }
+    ]
+  },
+  {
+    "id":3,
+    "name":"Other accruals",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload a breakdown of GL account",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review breakdown",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Confirm income tax treatment to be adopted",
+        "milestoneOffsetWeeks":-2
+      },
+      {
+        "id":4,
+        "name":"Upload additional workpapers to substantiate income tax treatment adopted",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":5,
+        "name":"Determine tax adjustments in the statement of taxable income",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":6,
+        "name":"Document any tax planning opportunities for next year",
+        "milestoneOffsetWeeks":-1
+      }
+    ]
+  },
+  {
+    "id":4,
+    "name":"Provision of doubtful debts",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload a breakdown of GL account",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review breakdown",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Confirm income tax treatment to be adopted",
+        "milestoneOffsetWeeks":-2
+      },
+      {
+        "id":4,
+        "name":"Upload additional workpapers to substantiate income tax treatment adopted",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":5,
+        "name":"Determine tax adjustments in the statement of taxable income",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":6,
+        "name":"Document any tax planning opportunities for next year",
+        "milestoneOffsetWeeks":-1
+      }
+    ]
+  },
+  {
+    "id":5,
+    "name":"Provision for long service leave",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload a breakdown of GL account",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review breakdown",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Confirm income tax treatment to be adopted",
+        "milestoneOffsetWeeks":-2
+      },
+      {
+        "id":4,
+        "name":"Upload additional workpapers to substantiate income tax treatment adopted",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":5,
+        "name":"Determine tax adjustments in the statement of taxable income",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":6,
+        "name":"Document any tax planning opportunities for next year",
+        "milestoneOffsetWeeks":-1
+      }
+    ]
+  },
+  {
+    "id":6,
+    "name":"Provision for annual leave",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload a breakdown of GL account",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review breakdown",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Confirm income tax treatment to be adopted",
+        "milestoneOffsetWeeks":-2
+      },
+      {
+        "id":4,
+        "name":"Upload additional workpapers to substantiate income tax treatment adopted",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":5,
+        "name":"Determine tax adjustments in the statement of taxable income",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":6,
+        "name":"Document any tax planning opportunities for next year",
+        "milestoneOffsetWeeks":-1
+      }
+    ]
+  },
+  {
+    "id":7,
+    "name":"Provision for sick leave",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload a breakdown of GL account",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review breakdown",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Confirm income tax treatment to be adopted",
+        "milestoneOffsetWeeks":-2
+      },
+      {
+        "id":4,
+        "name":"Upload additional workpapers to substantiate income tax treatment adopted",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":5,
+        "name":"Determine tax adjustments in the statement of taxable income",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":6,
+        "name":"Document any tax planning opportunities for next year",
+        "milestoneOffsetWeeks":-1
+      }
+    ]
+  },
+  {
+    "id":8,
+    "name":"Provision for stock obsolescence",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload a breakdown of GL account",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review breakdown",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Confirm income tax treatment to be adopted",
+        "milestoneOffsetWeeks":-2
+      },
+      {
+        "id":4,
+        "name":"Upload additional workpapers to substantiate income tax treatment adopted",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":5,
+        "name":"Determine tax adjustments in the statement of taxable income",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":6,
+        "name":"Document any tax planning opportunities for next year",
+        "milestoneOffsetWeeks":-1
+      }
+    ]
+  },
+  {
+    "id":9,
+    "name":"Other provisions",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload a breakdown of GL account",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review breakdown",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Confirm income tax treatment to be adopted",
+        "milestoneOffsetWeeks":-2
+      },
+      {
+        "id":4,
+        "name":"Upload additional workpapers to substantiate income tax treatment adopted",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":5,
+        "name":"Determine tax adjustments in the statement of taxable income",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":6,
+        "name":"Document any tax planning opportunities for next year",
+        "milestoneOffsetWeeks":-1
+      }
+    ]
+  },
+  {
+    "id":1,
+    "name":"Prepayments",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload a breakdown of GL account",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review breakdown",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Confirm income tax treatment to be adopted",
+        "milestoneOffsetWeeks":-2
+      },
+      {
+        "id":4,
+        "name":"Upload additional workpapers to substantiate income tax treatment adopted",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":5,
+        "name":"Determine tax adjustments in the statement of taxable income",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":6,
+        "name":"Document any tax planning opportunities for next year",
+        "milestoneOffsetWeeks":-1
+      }
+    ]
+  },
+  {
+    "id":10,
+    "name":"Accrued income",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload a breakdown of GL account",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review breakdown",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Confirm income tax treatment to be adopted",
+        "milestoneOffsetWeeks":-2
+      },
+      {
+        "id":4,
+        "name":"Upload additional workpapers to substantiate income tax treatment adopted",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":5,
+        "name":"Determine tax adjustments in the statement of taxable income",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":6,
+        "name":"Document any tax planning opportunities for next year",
+        "milestoneOffsetWeeks":-1
+      }
+    ]
+  },
+  {
+    "id":11,
+    "name":"Trading stock",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload a breakdown of GL account",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review breakdown",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Confirm income tax treatment to be adopted",
+        "milestoneOffsetWeeks":-2
+      },
+      {
+        "id":4,
+        "name":"Upload additional workpapers to substantiate income tax treatment adopted",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":5,
+        "name":"Determine tax adjustments in the statement of taxable income",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":6,
+        "name":"Document any tax planning opportunities for next year",
+        "milestoneOffsetWeeks":-1
+      }
+    ]
+  },
+  {
+    "id":12,
+    "name":"Deferred income",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload a breakdown of GL account",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review breakdown",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Confirm income tax treatment to be adopted",
+        "milestoneOffsetWeeks":-2
+      },
+      {
+        "id":4,
+        "name":"Upload additional workpapers to substantiate income tax treatment adopted",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":5,
+        "name":"Determine tax adjustments in the statement of taxable income",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":6,
+        "name":"Document any tax planning opportunities for next year",
+        "milestoneOffsetWeeks":-1
+      }
+    ]
+  },
+  {
+    "id":13,
+    "name":"Fixed assets",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload a breakdown of GL account",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review breakdown",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Confirm income tax treatment to be adopted",
+        "milestoneOffsetWeeks":-2
+      },
+      {
+        "id":4,
+        "name":"Upload additional workpapers to substantiate income tax treatment adopted",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":5,
+        "name":"Determine tax adjustments in the statement of taxable income",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":6,
+        "name":"Document any tax planning opportunities for next year",
+        "milestoneOffsetWeeks":-1
+      }
+    ]
+  },
+  {
+    "id":14,
+    "name":"Finance lease assets and liability",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload a breakdown of GL account",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review breakdown",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Confirm income tax treatment to be adopted",
+        "milestoneOffsetWeeks":-2
+      },
+      {
+        "id":4,
+        "name":"Upload additional workpapers to substantiate income tax treatment adopted",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":5,
+        "name":"Determine tax adjustments in the statement of taxable income",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":6,
+        "name":"Document any tax planning opportunities for next year",
+        "milestoneOffsetWeeks":-1
+      }
+    ]
+  },
+  {
+    "id":15,
+    "name":"Investments",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload a breakdown of GL account",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review breakdown",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Confirm income tax treatment to be adopted",
+        "milestoneOffsetWeeks":-2
+      },
+      {
+        "id":4,
+        "name":"Upload additional workpapers to substantiate income tax treatment adopted",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":5,
+        "name":"Determine tax adjustments in the statement of taxable income",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":6,
+        "name":"Document any tax planning opportunities for next year",
+        "milestoneOffsetWeeks":-1
+      }
+    ]
+  },
+  {
+    "id":16,
+    "name":"Entertainment expense",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload a breakdown of GL account",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review breakdown",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Confirm income tax treatment to be adopted",
+        "milestoneOffsetWeeks":-2
+      },
+      {
+        "id":4,
+        "name":"Upload additional workpapers to substantiate income tax treatment adopted",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":5,
+        "name":"Determine tax adjustments in the statement of taxable income",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":6,
+        "name":"Document any tax planning opportunities for next year",
+        "milestoneOffsetWeeks":-1
+      }
+    ]
+  },
+  {
+    "id":17,
+    "name":"Fines and penalties expense",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload a breakdown of GL account",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review breakdown",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Confirm income tax treatment to be adopted",
+        "milestoneOffsetWeeks":-2
+      },
+      {
+        "id":4,
+        "name":"Upload additional workpapers to substantiate income tax treatment adopted",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":5,
+        "name":"Determine tax adjustments in the statement of taxable income",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":6,
+        "name":"Document any tax planning opportunities for next year",
+        "milestoneOffsetWeeks":-1
+      }
+    ]
+  },
+  {
+    "id":18,
+    "name":"Repairs and maintenance expense",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload a breakdown of GL account",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review breakdown",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Confirm income tax treatment to be adopted",
+        "milestoneOffsetWeeks":-2
+      },
+      {
+        "id":4,
+        "name":"Upload additional workpapers to substantiate income tax treatment adopted",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":5,
+        "name":"Determine tax adjustments in the statement of taxable income",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":6,
+        "name":"Document any tax planning opportunities for next year",
+        "milestoneOffsetWeeks":-1
+      }
+    ]
+  },
+  {
+    "id":19,
+    "name":"Foreign royalty income",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload a breakdown of GL account",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review breakdown",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Confirm income tax treatment to be adopted",
+        "milestoneOffsetWeeks":-2
+      },
+      {
+        "id":4,
+        "name":"Upload additional workpapers to substantiate income tax treatment adopted",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":5,
+        "name":"Determine tax adjustments in the statement of taxable income",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":6,
+        "name":"Document any tax planning opportunities for next year",
+        "milestoneOffsetWeeks":-1
+      }
+    ]
+  },
+  {
+    "id":20,
+    "name":"Foreign royalty expense",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload a breakdown of GL account",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review breakdown",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Confirm income tax treatment to be adopted",
+        "milestoneOffsetWeeks":-2
+      },
+      {
+        "id":4,
+        "name":"Upload additional workpapers to substantiate income tax treatment adopted",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":5,
+        "name":"Determine tax adjustments in the statement of taxable income",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":6,
+        "name":"Document any tax planning opportunities for next year",
+        "milestoneOffsetWeeks":-1
+      }
+    ]
+  },
+  {
+    "id":21,
+    "name":"Foreign dividend income",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload a breakdown of GL account",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review breakdown",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Confirm income tax treatment to be adopted",
+        "milestoneOffsetWeeks":-2
+      },
+      {
+        "id":4,
+        "name":"Upload additional workpapers to substantiate income tax treatment adopted",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":5,
+        "name":"Determine tax adjustments in the statement of taxable income",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":6,
+        "name":"Document any tax planning opportunities for next year",
+        "milestoneOffsetWeeks":-1
+      }
+    ]
+  },
+  {
+    "id":22,
+    "name":"Foreign interest income",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload a breakdown of GL account",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review breakdown",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Confirm income tax treatment to be adopted",
+        "milestoneOffsetWeeks":-2
+      },
+      {
+        "id":4,
+        "name":"Upload additional workpapers to substantiate income tax treatment adopted",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":5,
+        "name":"Determine tax adjustments in the statement of taxable income",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":6,
+        "name":"Document any tax planning opportunities for next year",
+        "milestoneOffsetWeeks":-1
+      }
+    ]
+  },
+  {
+    "id":23,
+    "name":"Foreign interest expense",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload a breakdown of GL account",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review breakdown",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Confirm income tax treatment to be adopted",
+        "milestoneOffsetWeeks":-2
+      },
+      {
+        "id":4,
+        "name":"Upload additional workpapers to substantiate income tax treatment adopted",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":5,
+        "name":"Determine tax adjustments in the statement of taxable income",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":6,
+        "name":"Document any tax planning opportunities for next year",
+        "milestoneOffsetWeeks":-1
+      }
+    ]
+  },
+  {
+    "id":24,
+    "name":"Goodwill amortisation expense",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload a breakdown of GL account",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review breakdown",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Confirm income tax treatment to be adopted",
+        "milestoneOffsetWeeks":-2
+      },
+      {
+        "id":4,
+        "name":"Upload additional workpapers to substantiate income tax treatment adopted",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":5,
+        "name":"Determine tax adjustments in the statement of taxable income",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":6,
+        "name":"Document any tax planning opportunities for next year",
+        "milestoneOffsetWeeks":-1
+      }
+    ]
+  },
+  {
+    "id":25,
+    "name":"Share based payment expense",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload a breakdown of GL account",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review breakdown",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Confirm income tax treatment to be adopted",
+        "milestoneOffsetWeeks":-2
+      },
+      {
+        "id":4,
+        "name":"Upload additional workpapers to substantiate income tax treatment adopted",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":5,
+        "name":"Determine tax adjustments in the statement of taxable income",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":6,
+        "name":"Document any tax planning opportunities for next year",
+        "milestoneOffsetWeeks":-1
+      }
+    ]
+  },
+  {
+    "id":26,
+    "name":"Depreciation expense",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload a breakdown of GL account",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review breakdown",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Confirm income tax treatment to be adopted",
+        "milestoneOffsetWeeks":-2
+      },
+      {
+        "id":4,
+        "name":"Upload additional workpapers to substantiate income tax treatment adopted",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":5,
+        "name":"Determine tax adjustments in the statement of taxable income",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":6,
+        "name":"Document any tax planning opportunities for next year",
+        "milestoneOffsetWeeks":-1
+      }
+    ]
+  },
+  {
+    "id":27,
+    "name":"Consulting fees ",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload a breakdown of GL account",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review breakdown",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Confirm income tax treatment to be adopted",
+        "milestoneOffsetWeeks":-2
+      },
+      {
+        "id":4,
+        "name":"Upload additional workpapers to substantiate income tax treatment adopted",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":5,
+        "name":"Determine tax adjustments in the statement of taxable income",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":6,
+        "name":"Document any tax planning opportunities for next year",
+        "milestoneOffsetWeeks":-1
+      }
+    ]
+  },
+  {
+    "id":28,
+    "name":"Professional fees",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload a breakdown of GL account",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review breakdown",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Confirm income tax treatment to be adopted",
+        "milestoneOffsetWeeks":-2
+      },
+      {
+        "id":4,
+        "name":"Upload additional workpapers to substantiate income tax treatment adopted",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":5,
+        "name":"Determine tax adjustments in the statement of taxable income",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":6,
+        "name":"Document any tax planning opportunities for next year",
+        "milestoneOffsetWeeks":-1
+      }
+    ]
+  },
+  {
+    "id":29,
+    "name":"Legal fees",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload a breakdown of GL account",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review breakdown",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Confirm income tax treatment to be adopted",
+        "milestoneOffsetWeeks":-2
+      },
+      {
+        "id":4,
+        "name":"Upload additional workpapers to substantiate income tax treatment adopted",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":5,
+        "name":"Determine tax adjustments in the statement of taxable income",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":6,
+        "name":"Document any tax planning opportunities for next year",
+        "milestoneOffsetWeeks":-1
+      }
+    ]
+  },
+  {
+    "id":30,
+    "name":"Donations",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload a breakdown of GL account",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review breakdown",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Confirm income tax treatment to be adopted",
+        "milestoneOffsetWeeks":-2
+      },
+      {
+        "id":4,
+        "name":"Upload additional workpapers to substantiate income tax treatment adopted",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":5,
+        "name":"Determine tax adjustments in the statement of taxable income",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":6,
+        "name":"Document any tax planning opportunities for next year",
+        "milestoneOffsetWeeks":-1
+      }
+    ]
+  },
+  {
+    "id":31,
+    "name":"Foreign exchange gains and losses",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload a breakdown of GL account",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review breakdown",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Confirm income tax treatment to be adopted",
+        "milestoneOffsetWeeks":-2
+      },
+      {
+        "id":4,
+        "name":"Upload additional workpapers to substantiate income tax treatment adopted",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":5,
+        "name":"Determine tax adjustments in the statement of taxable income",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":6,
+        "name":"Document any tax planning opportunities for next year",
+        "milestoneOffsetWeeks":-1
+      }
+    ]
+  },
+  {
+    "id":32,
+    "name":"Fringe benefit tax expense",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload a breakdown of GL account",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review breakdown",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Confirm income tax treatment to be adopted",
+        "milestoneOffsetWeeks":-2
+      },
+      {
+        "id":4,
+        "name":"Upload additional workpapers to substantiate income tax treatment adopted",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":5,
+        "name":"Determine tax adjustments in the statement of taxable income",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":6,
+        "name":"Document any tax planning opportunities for next year",
+        "milestoneOffsetWeeks":-1
+      }
+    ]
+  },
+  {
+    "id":33,
+    "name":"Intercompany expenses",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload a breakdown of GL account",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review breakdown",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Confirm income tax treatment to be adopted",
+        "milestoneOffsetWeeks":-2
+      },
+      {
+        "id":4,
+        "name":"Upload additional workpapers to substantiate income tax treatment adopted",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":5,
+        "name":"Determine tax adjustments in the statement of taxable income",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":6,
+        "name":"Document any tax planning opportunities for next year",
+        "milestoneOffsetWeeks":-1
+      }
+    ]
+  },
+  {
+    "id":34,
+    "name":"Superannuation expense",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload a breakdown of GL account",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review breakdown",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Confirm income tax treatment to be adopted",
+        "milestoneOffsetWeeks":-2
+      },
+      {
+        "id":4,
+        "name":"Upload additional workpapers to substantiate income tax treatment adopted",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":5,
+        "name":"Determine tax adjustments in the statement of taxable income",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":6,
+        "name":"Document any tax planning opportunities for next year",
+        "milestoneOffsetWeeks":-1
+      }
+    ]
+  },
+  {
+    "id":35,
+    "name":"Subscription expenses",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload a breakdown of GL account",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review breakdown",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Confirm income tax treatment to be adopted",
+        "milestoneOffsetWeeks":-2
+      },
+      {
+        "id":4,
+        "name":"Upload additional workpapers to substantiate income tax treatment adopted",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":5,
+        "name":"Determine tax adjustments in the statement of taxable income",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":6,
+        "name":"Document any tax planning opportunities for next year",
+        "milestoneOffsetWeeks":-1
+      }
+    ]
+  },
+  {
+    "id":36,
+    "name":"Other expenses of a capital nature",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload a breakdown of GL account",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review breakdown",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Confirm income tax treatment to be adopted",
+        "milestoneOffsetWeeks":-2
+      },
+      {
+        "id":4,
+        "name":"Upload additional workpapers to substantiate income tax treatment adopted",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":5,
+        "name":"Determine tax adjustments in the statement of taxable income",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":6,
+        "name":"Document any tax planning opportunities for next year",
+        "milestoneOffsetWeeks":-1
+      }
+    ]
+  },
+  {
+    "id":37,
+    "name":"Borrowing costs",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload a breakdown of GL account",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review breakdown",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Confirm income tax treatment to be adopted",
+        "milestoneOffsetWeeks":-2
+      },
+      {
+        "id":4,
+        "name":"Upload additional workpapers to substantiate income tax treatment adopted",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":5,
+        "name":"Determine tax adjustments in the statement of taxable income",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":6,
+        "name":"Document any tax planning opportunities for next year",
+        "milestoneOffsetWeeks":-1
+      }
+    ]
+  },
+  {
+    "id":38,
+    "name":"Business related costs",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload a breakdown of GL account",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review breakdown",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Confirm income tax treatment to be adopted",
+        "milestoneOffsetWeeks":-2
+      },
+      {
+        "id":4,
+        "name":"Upload additional workpapers to substantiate income tax treatment adopted",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":5,
+        "name":"Determine tax adjustments in the statement of taxable income",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":6,
+        "name":"Document any tax planning opportunities for next year",
+        "milestoneOffsetWeeks":-1
+      }
+    ]
+  },
+  {
+    "id":39,
+    "name":"Luxury car leases",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload a breakdown of GL account",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review breakdown",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Confirm income tax treatment to be adopted",
+        "milestoneOffsetWeeks":-2
+      },
+      {
+        "id":4,
+        "name":"Upload additional workpapers to substantiate income tax treatment adopted",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":5,
+        "name":"Determine tax adjustments in the statement of taxable income",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":6,
+        "name":"Document any tax planning opportunities for next year",
+        "milestoneOffsetWeeks":-1
+      }
+    ]
+  },
+  {
+    "id":40,
+    "name":"Capital works deduction",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload a breakdown of GL account",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review breakdown",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Confirm income tax treatment to be adopted",
+        "milestoneOffsetWeeks":-2
+      },
+      {
+        "id":4,
+        "name":"Upload additional workpapers to substantiate income tax treatment adopted",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":5,
+        "name":"Determine tax adjustments in the statement of taxable income",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":6,
+        "name":"Document any tax planning opportunities for next year",
+        "milestoneOffsetWeeks":-1
+      }
+    ]
+  },
+  {
+    "id":41,
+    "name":"TOFA gains and losses",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload a breakdown of GL account",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review breakdown",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Confirm income tax treatment to be adopted",
+        "milestoneOffsetWeeks":-2
+      },
+      {
+        "id":4,
+        "name":"Upload additional workpapers to substantiate income tax treatment adopted",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":5,
+        "name":"Determine tax adjustments in the statement of taxable income",
+        "milestoneOffsetWeeks":-1
+      },
+      {
+        "id":6,
+        "name":"Document any tax planning opportunities for next year",
+        "milestoneOffsetWeeks":-1
+      }
+    ]
+  },
+  {
+    "id":42,
+    "name":"PAYG instalments",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload supporting workpapers",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review workpapers",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Determine values for inputting in the ATO form",
+        "milestoneOffsetWeeks":-2
+      }
+    ]
+  },
+  {
+    "id":43,
+    "name":"Franking account",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload supporting workpapers",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review workpapers",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Determine values for inputting in the ATO form",
+        "milestoneOffsetWeeks":-2
+      }
+    ]
+  },
+  {
+    "id":44,
+    "name":"R&D tax offset",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload supporting workpapers",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review workpapers",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Determine values for inputting in the ATO form",
+        "milestoneOffsetWeeks":-2
+      }
+    ]
+  },
+  {
+    "id":45,
+    "name":"Tax losses",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload supporting workpapers",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review workpapers",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Determine values for inputting in the ATO form",
+        "milestoneOffsetWeeks":-2
+      }
+    ]
+  },
+  {
+    "id":46,
+    "name":"Capital losses",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload supporting workpapers",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review workpapers",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Determine values for inputting in the ATO form",
+        "milestoneOffsetWeeks":-2
+      }
+    ]
+  },
+  {
+    "id":47,
+    "name":"Form C",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload supporting workpapers",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review workpapers",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Determine values for inputting in the ATO form",
+        "milestoneOffsetWeeks":-2
+      }
+    ]
+  },
+  {
+    "id":48,
+    "name":"International dealings schedule",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload supporting workpapers",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review workpapers",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Determine values for inputting in the ATO form",
+        "milestoneOffsetWeeks":-2
+      }
+    ]
+  },
+  {
+    "id":49,
+    "name":"Losses schedule",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload supporting workpapers",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review workpapers",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Determine values for inputting in the ATO form",
+        "milestoneOffsetWeeks":-2
+      }
+    ]
+  },
+  {
+    "id":50,
+    "name":"R&D tax incentive schedule",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload supporting workpapers",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review workpapers",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Determine values for inputting in the ATO form",
+        "milestoneOffsetWeeks":-2
+      }
+    ]
+  },
+  {
+    "id":51,
+    "name":"Capital gains schedule",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload supporting workpapers",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review workpapers",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Determine values for inputting in the ATO form",
+        "milestoneOffsetWeeks":-2
+      }
+    ]
+  },
+  {
+    "id":52,
+    "name":"Interest and dividend schedule",
+    "tasks":[
+      {
+        "id":1,
+        "name":"Upload supporting workpapers",
+        "milestoneOffsetWeeks":-4
+      },
+      {
+        "id":2,
+        "name":"Assign user to review workpapers",
+        "milestoneOffsetWeeks":-3
+      },
+      {
+        "id":3,
+        "name":"Determine values for inputting in the ATO form",
+        "milestoneOffsetWeeks":-2
+      }
+    ]
+  }
+]
 }

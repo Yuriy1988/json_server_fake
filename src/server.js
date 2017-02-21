@@ -33,6 +33,11 @@ server.post('/auth/login', function (req, res) {
   }
 })
 
+server.post('/upload/accounts', function (req, res) {
+  var success = router.db.get('accountsHardcoded');
+  res.jsonp(success);
+})
+
 server.use(router);
 
 var port = process.env.PORT || 3000;
