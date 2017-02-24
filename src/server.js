@@ -34,7 +34,7 @@ server.post('/auth/login', function (req, res) {
 })
 
 server.post('/upload/accounts', function (req, res) {
-  var success = router.db.get('accountsHardcoded');
+  var success = router.db.get('accounts');
   res.jsonp(success);
 })
 
