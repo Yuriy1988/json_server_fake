@@ -323,6 +323,7 @@
   "users": [
     {
       "id": 1,
+      "email": "test@test.com",
       "firstName": "Stan",
       "lastName": "May",
       "resolved": 12,
@@ -336,6 +337,7 @@
     },
     {
       "id": 2,
+      "email": "test@test.com",
       "firstName": "Mike",
       "lastName": "Bloggs",
       "resolved": 10,
@@ -349,6 +351,7 @@
     },
     {
       "id": 3,
+      "email": "test@test.com",
       "firstName": "Test",
       "lastName": "3",
       "resolved": 10,
@@ -488,43 +491,6 @@
       "accountId": 1
     },
     {
-      "id": 2,
-      "status": "Done",
-      "lastUpdated": "01/04/2016",
-      "startDate": "01/04/2016",
-      "project": {
-        "id": 1
-      },
-      "entity": {
-        "name": "Corporate Consolidated GST group",
-        "id": 1
-      },
-      "obligation": {
-        "name": "Business Activity Statement",
-        "id": 1
-      },
-      "dueDate": "Fri Feb 25 2017 15:46:42 GMT+0200 (EET)",
-      "name": "Provisions #1092",
-      "responsible": {
-        "id": 2,
-        "name": "Jane Almond"
-      },
-      "preparer": {
-        "id": 2,
-        "name": "Name 2 Dou"
-      },
-      "reviewer": {
-        "id": 3,
-        "name": "Name 2 Dou"
-      },
-      "progress": 0,
-      "workstream": {
-        "id": 2,
-        "name": "Donations"
-      },
-      "accountId": 1
-    },
-    {
       "id": 3,
       "status": "Done",
       "lastUpdated": "01/04/2016",
@@ -558,43 +524,6 @@
       "workstream": {
         "id": 3,
         "name": "Professional fees"
-      },
-      "accountId": 1
-    },
-    {
-      "id": 4,
-      "status": "Done",
-      "lastUpdated": "01/04/2016",
-      "startDate": "01/04/2016",
-      "project": {
-        "id": 1
-      },
-      "entity": {
-        "name": "Corporate Consolidated GST group",
-        "id": 1
-      },
-      "obligation": {
-        "name": "Business Activity Statement",
-        "id": 1
-      },
-      "dueDate": "Fri Feb 25 2017 15:46:42 GMT+0200 (EET)",
-      "name": "Provisions #9345",
-      "responsible": {
-        "id": 1,
-        "name": "Stan May"
-      },
-      "preparer": {
-        "id": 2,
-        "name": "Name 2 Dou"
-      },
-      "reviewer": {
-        "id": 3,
-        "name": "Name 2 Dou"
-      },
-      "progress": 40,
-      "workstream": {
-        "id": 4,
-        "name": "Donations"
       },
       "accountId": 1
     },
@@ -636,41 +565,8 @@
       "accountId": 1
     },
     {
-      "id": 7,
       "status": "In progress",
-      "lastUpdated": "01/04/2016",
-      "startDate": "01/04/2016",
-      "project": {
-        "id": 2
-      },
-      "entity": {
-        "name": "Corporate Consolidated GST group",
-        "id": 1
-      },
-      "obligation": {
-        "name": "Business Activity Statement",
-        "id": 1
-      },
-      "dueDate": "03/03/2017",
-      "name": "Accounts payable #2341",
-      "responsible": {
-        "id": 3,
-        "name": "Mike Bloggs"
-      },
-      "preparer": {
-        "id": 2,
-        "name": "Name 2 Dou"
-      },
-      "reviewer": {
-        "id": 3,
-        "name": "Name 2 Dou"
-      },
-      "progress": 20,
-      "workstream": {
-        "id": 1,
-        "name": "Fixed Assets"
-      },
-      "accountId": 1
+      "id": 7
     },
     {
       "id": 8,
@@ -968,7 +864,7 @@
       },
       "accountId": 2
     }
-   ],
+  ],
   "workstreams": [
     {
       "id": 1,
@@ -1055,6 +951,16 @@
       "rolledForward": "Yes",
       "method": "Top Down",
       "name": "Test Project Name",
+      "milestones": [
+        {
+          "name": "v1.0",
+          "dueDate": "2017-02-28"
+        },
+        {
+          "name": "v1.0",
+          "dueDate": "2017-03-26"
+        }
+      ],
       "entity": {
         "name": "Corporate Consolidated GST group",
         "id": 1
@@ -1126,6 +1032,16 @@
     },
     {
       "id": 2,
+      "milestones": [
+        {
+          "name": "v1.0",
+          "dueDate": "2017-02-28"
+        },
+        {
+          "name": "v1.0",
+          "dueDate": "2017-03-26"
+        }
+      ],
       "accounts": [
         {
           "id": 1,
@@ -1202,6 +1118,16 @@
     },
     {
       "id": 3,
+      "milestones": [
+        {
+          "name": "v1.0",
+          "dueDate": "2017-02-28"
+        },
+        {
+          "name": "v1.0",
+          "dueDate": "2017-03-26"
+        }
+      ],
       "tasks": [
         {
           "id": 8,
@@ -1290,6 +1216,16 @@
     },
     {
       "id": 4,
+      "milestones": [
+        {
+          "name": "v1.0",
+          "dueDate": "2017-02-28"
+        },
+        {
+          "name": "v1.0",
+          "dueDate": "2017-03-26"
+        }
+      ],
       "tasks": [
         {
           "id": 14,
@@ -1358,6 +1294,16 @@
     },
     {
       "id": 5,
+      "milestones": [
+        {
+          "name": "v1.0",
+          "dueDate": "2017-02-28"
+        },
+        {
+          "name": "v1.0",
+          "dueDate": "2017-03-26"
+        }
+      ],
       "tasks": [
         {
           "id": 15,
@@ -1426,6 +1372,16 @@
     },
     {
       "id": 6,
+      "milestones": [
+        {
+          "name": "v1.0",
+          "dueDate": "2017-02-28"
+        },
+        {
+          "name": "v1.0",
+          "dueDate": "2017-03-26"
+        }
+      ],
       "tasks": [
         {
           "id": 20,
@@ -2015,7 +1971,7 @@
           }
         ],
         "rows": [
-                    [
+          [
             "2",
             "Draft",
             "Preparer - Jane Almond",
